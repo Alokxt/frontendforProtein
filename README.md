@@ -30,7 +30,7 @@ The inference API is fully containerized and deployed separately.
 ## 📄 Related Work
 I have written a detailed technical article explaining the models, experiments, and results behind this project:
 
-👉 **Medium Article:** *(add your Medium link here)*
+👉 **Medium Article:** *(https://medium.com/@manawatalok/secondary-protein-structure-prediction-067fb76c4785)* . 
 
 ---
 
