@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protein Secondary Structure Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Protein Structure Prediction</h1>
+
+    <label for="sequence">Protein Sequence</label>
+    <textarea id="sequence" placeholder="Enter protein sequence (e.g. MKTFFVLLL...)"></textarea>
+
+    <button onclick="predict()">Predict</button>
+
+    <div id="info" class="hidden"></div>
+    
+    <div id="loading" class="hidden">Running inference...</div>
+
+    <div id="result" class="hidden">
+        <div class="output-card">
+            <h3>SST8</h3>
+            <p id="sst8"></p>
+            <span class="confidence">Model certainty (softmax-based): <span id="sst8_conf"></span></span>
+        </div>
+
+        <div class="output-card">
+            <h3>SST3</h3>
+            <p id="sst3"></p>
+            <span class="confidence">Model certainty (softmax-based): <span id="sst3_conf"></span></span>
+        </div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
